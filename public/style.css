@@ -1,0 +1,153 @@
+body {
+    text-align: center;
+    background-color: black !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.nav-item {
+    padding: 10px;
+}
+.search-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+#search {
+    width: 300px;
+    margin-top:1em;
+    transform: translateY(50%);
+}
+#search + button {
+    position: relative;
+    top: -20px;
+    left: 300px;
+}
+#show-password {
+    position: relative;
+    top: -30px;
+    left: 45%
+}
+.login-modal-title span{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.login-modal-title .active{
+    text-decoration: underline;
+}
+#registerDropdown + .dropdown-menu {
+    left: 87%;
+}
+#registration-form {
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding:30px;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+.cities-container {
+    text-align: center !important;
+    padding: 30px;
+    overflow-x:hidden;
+    background-color: #343a40;
+}
+.cities-container h4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.cities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.city {
+    height: 120px;
+    width: 120px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px;
+    background-color:#fff;
+    transition: all 0.6s ease-in;
+    text-transform: capitalize;
+}
+.city span {
+    position: relative;
+    top: 40%;
+}
+.city:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 4px #c7c7c7, 0px 0px 14px #c7c7c7;
+}
+.internship, .application, .post-section, .internship-details, .application-form-container {
+    color: white;
+    background-color:#32383f;
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 5px;
+}
+.internship {
+    width: 80%;
+    margin-left: 10%;
+}
+.internship .brand {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    bottom: 25px;
+    background-color: white;
+}
+.error {
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+.close {
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.side-nav {
+    color: white;
+    height: 200px;
+    margin-top: 60px;
+    text-align: center;
+}
+.side-nav a, .side-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.side-nav a:hover, .side-nav a:active{
+    text-decoration: none;
+    color: #a8a8a8;
+}
+.side-nav .list-group-item {
+    background-color:#32383f;
+}
+.post-section h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.post-container {
+    color: white;
+}
+.internship-container {
+    color: white;
+}
+.application-form-container {
+    padding: 30px;
+}
+.app-details {
+    display:none;
+}
