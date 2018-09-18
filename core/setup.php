@@ -1,5 +1,6 @@
 <?php
 
+    // requires all classes
     require_once 'App.php';
     require_once 'core/db/Connection.php';
     require_once 'core/db/QueryBuilder.php';
@@ -16,6 +17,7 @@
 
     session_start();
 
+    // if the session in set, create the singleton 'user' object which would handle all database interactions.
     if (isset($_SESSION['type'])) {
         $user = $_SESSION['type'] == 'employer'? new Employer($_SESSION['email']) : new Student($_SESSION['email']);
         App::bind('user', $user);
@@ -24,10 +26,5 @@
         $error = $_SESSION['error'];
         unset($_SESSION['error']);
     }
-    // $employer = new Employer('Parama','Kar','parama_kar@infosys.com', 'Parama@123', 'Infosys', '9739095531');
-    // $student = new Student('Parama','Kar','parama_kar@infosys.com', 'Parama@123');
-  
-    // print_r($employer);
-    // print_r($student);
     
 ?>

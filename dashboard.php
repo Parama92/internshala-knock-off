@@ -22,6 +22,7 @@
         
         App::get('user')->postInternship(compact('techid','description','interns','skills','location','start','duration','stipend','apply'));
     }
+    // if an employer is logged in, provide employer specific view
     if ($_SESSION['type'] == 'employer') {
         $nav = isset($_GET['nav']) ? $_GET['nav'] : 'app';
         if ($nav == 'app') {
@@ -36,11 +37,14 @@
             $techs = App::get('database')->runQuery('SELECT techid, field FROM tech');
         }
     }
+    // if a student is logged in, provide student specific view
     else if ($_SESSION['type'] == 'student') {
         $stuApps = App::get('user')->getApplications();
     }
 
     require_once 'views/dashboard.view.php';
+
+    // a function to validate date
 
     function validateDate ($date) {
         if (strlen($date) == 0) {

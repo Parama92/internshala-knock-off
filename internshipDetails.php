@@ -2,6 +2,7 @@
 
     require_once './core/setup.php';
     
+    // check to see if intrid is passed in url
     if (isset($_GET['intrid'])) {
         $intrid = (int)$_GET['intrid'];
 
@@ -19,7 +20,8 @@
         }
     }
     else {
-        $error = 'Invalid internship';
+        $_SESSION['error'] = 'Invalid internship';
+        header('location: index.php');
     }
     
 

@@ -1,6 +1,11 @@
 <?php
-
+    /**
+     * A Class to handle the actions that a student can perform.
+    */
     abstract class User {
+        
+        /** @var string $email A string to store the email. */
+        /** @var string $type A string to store the typeof user, i.e, student or employer. */
         
         protected $email, $type;
         public function __construct ($email) {

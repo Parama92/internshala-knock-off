@@ -69,13 +69,14 @@ body {
 .city {
     height: 120px;
     width: 120px;
-    border: 1px solid #c7c7c7;
+    border: 1px solid transparent;
     border-radius: 3px;
     cursor: pointer;
     margin: 10px;
-    background-color:#fff;
+    color:#fff;
     transition: all 0.6s ease-in;
     text-transform: capitalize;
+    background-image: linear-gradient(to bottom right, #393c68f6, #663c69ec);
 }
 .city span {
     position: relative;
@@ -103,7 +104,7 @@ body {
     position: relative;
     left: 90%;
     bottom: 25px;
-    background-color: white;
+    background-image: linear-gradient(to bottom right, #393c68f6, #663c69ec);
 }
 .error {
     border: 2px solid red;

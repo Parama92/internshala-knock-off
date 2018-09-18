@@ -6,7 +6,7 @@
         <div class="application">
             <div class="row">
                 <h5>Applied To :</h5>
-                <div class="col-6"><p><?php echo $stuApp['org'];?></p></div>
+                <div class="col-6"><p><?php echo $stuApp['org'].' for an internship in <u>'.$stuApp['field'].'</u>';?></p></div>
             </div>
         </div>
     <?php } ?>
