@@ -1,3 +1,9 @@
 {
-    
+    "name": "internshala knock-off",
+    "description": "",
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
 }
